@@ -458,6 +458,10 @@ def calculate_default_aws_account(proyecto, ambiente):
         return "Operations dev"
     elif proj == "SWAT" and is_prod:
         return "Operations pdn"
+    elif proj == "IA-EVA" and is_dev:
+        return "Pragma Intelligence Dev"
+    elif proj == "IA-EVA" and is_prod:
+        return "Pragma intelligence Prod"
         
     return None
 

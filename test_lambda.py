@@ -520,6 +520,8 @@ class TestSlackTicketsLambda(unittest.TestCase):
         self.assertEqual(lambda_function.calculate_default_aws_account("Creci", "Producción"), "Mapa de crecimiento dev (antigua org)")
         self.assertEqual(lambda_function.calculate_default_aws_account("Swat", "Desarrollo"), "Operations dev")
         self.assertEqual(lambda_function.calculate_default_aws_account("Swat", "Producción"), "Operations pdn")
+        self.assertEqual(lambda_function.calculate_default_aws_account("Ia-Eva", "Desarrollo"), "Pragma Intelligence Dev")
+        self.assertEqual(lambda_function.calculate_default_aws_account("Ia-Eva", "Producción"), "Pragma intelligence Prod")
         self.assertIsNone(lambda_function.calculate_default_aws_account("Datos", "Desarrollo"))
 
     @patch('lambda_function.requests.post')
