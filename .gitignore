@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Lambda build artifacts
+lambda/dist/
+lambda/lambda_function.zip
+
+# Logs and local temp JSON files
+*.log
+log.json
+log2.json
+
+# Local environment variables / secrets
+.env
+.env.*
+.secret
+
+# Credentials and keys
+google-credentials.json
+terraform/google-credentials.json
+*.json.key
+
+# Terraform local files
+**/.terraform/
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
